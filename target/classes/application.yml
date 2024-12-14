@@ -1,0 +1,25 @@
+#spring:
+#  datasource:
+#    username: root
+#    password: password
+#    url: jdbc:mysql://localhost:3306/javatechie
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#  jpa:
+#    show-sql: true
+#    hibernate:
+#      ddl-auto: update
+#    properties.hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
+
+spring:
+  datasource:
+    url: jdbc:mysql://host.docker.internal:3306/mydatabase
+    username: root
+    password: "password@123"
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate.dialect: org.hibernate.dialect.MySQL8Dialect
+
